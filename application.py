@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 
 application=Flask(__name__)
 app=application
+app.config['DEBUG']=True
 
-
-@app.route('/',methods=['GET'])
+@app.route('/',methods=['GET','POST'])
 def home():
     df=pd.read_json('https://www.mohfw.gov.in/data/datanew.json')
     data=[]
@@ -19,4 +19,4 @@ def home():
 
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run()

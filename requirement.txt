@@ -1,5 +1,4 @@
-flask
-flask_sqlalchemy
-pandas
-seaborn
-matplotlib
+Flask
+Flask_sqlalchemy
+Flask_restful
+requests
